@@ -3,13 +3,13 @@ import { Suspense } from 'react';
 import Loader from '../../components/Loader/Loader';
 import { ImFilm } from "react-icons/im";
 
-import css from './Layout.module.css';
 import { Container, Nav, SNavLink, LogoWrapper, LinkWrapper, WrapperItem } from './Layout.styled.js';
+import css from './Layout.module.css';
 
 const Layout = () => {
   return (
     <>
-      <Nav>
+      <Nav className={css.navigation}>
         <Container className={css.container}>
           <LogoWrapper>
             <ImFilm className={css.icon} />
@@ -34,7 +34,7 @@ const Layout = () => {
           <Suspense fallback={<Loader />}>
             <Outlet />
           </Suspense>
-        </div >
+        </div>
 
     </>
   );

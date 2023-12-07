@@ -18,7 +18,11 @@ export const Container = styled.div`
 export const Title = styled.h1`
   font-weight: 700;
   color: #212529;
-  margin: 50px 0 25px 0;
+  margin: 30px 0 15px 0;
+
+  @media (min-width: 877px) {
+    margin: 50px 0 25px 0;
+  }
 `;
 
 export const List = styled.ul`
@@ -33,7 +37,6 @@ export const List = styled.ul`
 export const Item = styled.li`
   display: inline-block;
 
-  width: 100%;
   max-width: 280px;
   margin: 12px;
 
@@ -53,7 +56,8 @@ export const Img = styled.img`
   display: block;
 
   height: 400px;
-  width: 100%;
+  width: auto;
+  max-width: 266px;
 
   padding: 0px;
   margin: 0px;
@@ -69,10 +73,12 @@ export const TitleWrapper = styled.div`
 
   padding: 5px;
   margin: 0px;
+  max-width: 256px;
 
   font-size: 20px;
   color: #212529;
 `;
+
 
 
 

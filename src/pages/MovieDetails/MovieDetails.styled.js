@@ -8,7 +8,7 @@ export const Button = styled.button`
   font-weight: 700;
   cursor: pointer;
 
-  margin: 20px auto 15px 0;
+  margin: 20px auto 15px auto;
 
   border: 1px solid #212529;
   border-radius: 5px;
@@ -19,28 +19,67 @@ export const Button = styled.button`
     box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
     0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
   }
+
+  @media (min-width: 768px) {
+    margin: 20px auto 15px 0;
+  }
 `;
 
 export const Container = styled.div`
   width: 100%;
-  /*max-width: 1300px;*/
   max-width: 300px;
 
   margin-right: auto;
   margin-left: auto;
+
+  text-align: center;
+
+  @media (min-width: 425px) {
+    max-width: 738px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 738px;
+    text-align: start;
+  }
+
+  @media (min-width: 877px) {
+    max-width: 1300px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 `;
 
 export const InfoWrapper = styled.div`
-  /*display: flex;*/
   display: block;
-  gap: 40px;
+
+  max-width: 425px;
+  margin-left: auto;
+  margin-right: auto;
 
   margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 40px;
+
+    max-width: 738px;
+  }
+
+  @media (min-width: 877px) {
+    max-width: 1300px;
+  }
 `;
 
 export const Img = styled.img`
-  /*width: 350px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 300px;
+
+  @media (min-width: 768px) {
+    width: 350px;
+  }
 `;
 
 export const AditionalList = styled.ul`
@@ -50,6 +89,12 @@ export const AditionalList = styled.ul`
   gap: 15px;
   padding: 0;
   margin-bottom: 30px;
+
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: start;
+  }
 `;
 
 export const InfoLink = styled(NavLink)`

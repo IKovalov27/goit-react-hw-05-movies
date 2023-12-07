@@ -5,6 +5,16 @@ export const Container = styled.div`
 
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: 425px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media (min-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 `;
 
 export const Title = styled.h2`
@@ -43,9 +53,13 @@ export const Text = styled.p`
     border-bottom-right-radius: 5px;
 
     margin: 0;
-    /*padding: 16px;*/
 
     padding: 5px;
     font-size: 12px;
+
+    @media (min-width: 425px) {
+        padding: 16px;
+        font-size: 15px;
+    }
 `;
 
