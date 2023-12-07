@@ -43,6 +43,9 @@ export const Text = styled.p`
     border-bottom-right-radius: 5px;
 
     margin: 0;
-    padding: 16px;
+    /*padding: 16px;*/
+
+    padding: 5px;
+    font-size: 12px;
 `;
 

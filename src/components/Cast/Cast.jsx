@@ -14,20 +14,20 @@ const Cast = () => {
 
   return (
     <Container>
-      {credits.length > 0 && (
+      {credits.length > 0 ? (
         <List>
-          {credits.map(({ id, name, character, photo }) => {
-            return (
-              <Item key={id}>
-                <Img src={photo} alt={name} />
-                <Description>
-                  <ActorName>{name}</ActorName>
-                  <Character>Character: {character}</Character>
-                </Description>
-              </Item>
-            );
-          })}
+          {credits.map(({ id, name, character, photo }) => (
+            <Item key={id}>
+              <Img src={photo} alt={name} />
+              <Description>
+                <ActorName>{name}</ActorName>
+                <Character>Character: {character}</Character>
+              </Description>
+            </Item>
+          ))}
         </List>
+      ) : (
+        <p>We don't have any actors for this movie.</p>
       )}
     </Container>
   );

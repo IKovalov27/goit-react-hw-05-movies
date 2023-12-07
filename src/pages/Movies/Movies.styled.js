@@ -2,17 +2,21 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;*/
 
-  max-width: 1140px;
+  display: block;
+
+  /*max-width: 1140px;*/
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 `;
 
 export const Form = styled.form`
   display: flex;
+  justify-content: center;
 
   margin-top: 25px;
   margin-bottom: 20px;
@@ -24,7 +28,9 @@ export const Input  = styled.input`
 
   font-size: 15px;
 
-  width: 250px;
+  /*width: 250px;*/
+  width: 200px;
+
   border: none;
   outline: none;
 

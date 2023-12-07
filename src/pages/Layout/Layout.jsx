@@ -4,7 +4,7 @@ import Loader from '../../components/Loader/Loader';
 import { ImFilm } from "react-icons/im";
 
 import css from './Layout.module.css';
-import { Container, Nav, SNavLink, LogoWrapper } from './Layout.styled.js';
+import { Container, Nav, SNavLink, LogoWrapper, LinkWrapper, WrapperItem } from './Layout.styled.js';
 
 const Layout = () => {
   return (
@@ -15,12 +15,18 @@ const Layout = () => {
             <ImFilm className={css.icon} />
             MovieFinder
           </LogoWrapper>
-          <SNavLink to="/">
-            Home
-          </SNavLink>
-          <SNavLink to="/movies">
-            Movies
-          </SNavLink>
+          <LinkWrapper>
+            <WrapperItem>
+              <SNavLink to="/">
+                Home
+              </SNavLink>
+            </WrapperItem>
+            <WrapperItem>
+              <SNavLink to="/movies" className={css.link}>
+                Movies
+              </SNavLink>
+            </WrapperItem>
+          </LinkWrapper>
         </Container>
       </Nav>
 

@@ -23,21 +23,24 @@ export const Button = styled.button`
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1300px;
+  /*max-width: 1300px;*/
+  max-width: 300px;
 
   margin-right: auto;
   margin-left: auto;
 `;
 
 export const InfoWrapper = styled.div`
-  display: flex;
+  /*display: flex;*/
+  display: block;
   gap: 40px;
 
   margin-bottom: 30px;
 `;
 
 export const Img = styled.img`
-  width: 350px;
+  /*width: 350px;*/
+  width: 300px;
 `;
 
 export const AditionalList = styled.ul`
