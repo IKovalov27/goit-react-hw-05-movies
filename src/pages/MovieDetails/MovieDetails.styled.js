@@ -79,6 +79,13 @@ export const Img = styled.img`
 
   @media (min-width: 768px) {
     width: 350px;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: 877px) {
+    width: 350px;
   }
 `;
 

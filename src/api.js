@@ -11,7 +11,7 @@ const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
 export const fetchTrending = async () => {
   return axios
-    .get(`/trending/all/day?`)
+    .get(`/trending/movie/week`)
     .then(({ data: { results } }) =>
       results.map(({ id, title, poster_path: poster }) => ({
         id,

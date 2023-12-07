@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <Container>
-      <Title>Trending today</Title>
+      <Title>Trends of the week</Title>
       {movies && movies.length > 0 && (
         <List>
           {movies.map(({ id, title, poster }) => (
