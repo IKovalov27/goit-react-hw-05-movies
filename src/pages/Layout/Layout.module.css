@@ -1,0 +1,13 @@
+@media (max-width: 400px) {
+    .container {
+        width: 320px;
+    }
+}
+
+.icon {
+    color: white;
+    width: 20px;
+    height: 20px;
+
+    padding-right: 5px;
+};
